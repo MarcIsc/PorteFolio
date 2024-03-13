@@ -1,76 +1,153 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../ASSETS/CSS/page.css">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <a href="#"><img src="../ASSETS/IMAGES/logo/logo 2 espace.png" alt="logo"></a>
-        <div>
-            <a href="#">Nos services</a>
-            <a href="#">A propos</a>
-            <a href="#">Contact</a>
-        </div>
-    </header>    
-    <section>
-        <h1>ISAAC Marc  <br> Développeur Web - Intégrateur</h1>
-    </section>
-    <section>
-        <h2>A propos de moi</h2>
-        <img src="../ASSETS/IMAGES/ISAAC/20240219_155041.jpg" alt="image de moi">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure quibusdam vitae dignissimos nostrum doloremque accusantium autem quo sequi. Nihil voluptates esse veniam cum nisi commodi facilis et repudiandae? Natus, id!</p>
-    </section>
+    <head>
+        <title>One million lines_</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
 
-    <section>
-        <h2>Actuellement:</h2>
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+            
+        />
+        <!-- lien icone bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    <body>
+      <header>
+
+        <nav class="navbar navbar-expand-sm bg-black " data-bs-theme="dark">
+          <div class="container-fluid">
+            <a class="navbar-brand col-md-4 my-auto " href="index.html"><img src="assets/images/logo/logo 2 espace.png" class="img-fluid col-md-1 " alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>                  
+            <div class="collapse navbar-collapse justify-content-md-end " id="navbarNav">
+              <ul class="navbar-nav w-75 justify-content-around ">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Mes compétence</a>
+                </li>
+                <li class="nav-item">                      
+                  <a class="nav-link" href="#">Contact</a>
+              </li>   
+            </ul>                
+          </div>
+          </div>
+        </nav>
+        <div id="entete">
+          <div class="row flex-column col-8 col-md-10 mx-auto align-items-center text-center ">
+           <div id="present" class="my-5  mx-auto align-items-center text-center ">
+              <h1 class="col-10 mx-auto col-md-10 py-3">ISAAC Marc </h1>
+              <p class="col-12 mx-auto col-md-9 py-2 fs-3">Développeur Web <strong class="text-uppercase ">Full Stack</strong> </p>
+           </div>
+
+            <div class="mb-5 px-5">
+              <button type="button" class="btn btn-primary ">En savoir plus</button>
+            </div>
+
+            <div class="col-3 col-md-1 py-3">
+              <img src="assets/images/code.png" alt="image code"class="img-fluid ">
+            </div>
+
+          </div>
+        </div>
+      </header>
+
+        <main>
+          <section class="row my-5 justify-content-around align-items-center ">
+            <h2 class="text-center ">Qui suis-je?</h2>
+            <img src="assets/images/isaac/20240219_155041.jpg" class="img-fluid rounded-circle col-md-6" alt="image isaac">
+            <p class="col-md-6 text-center ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos explicabo quos quo expedita doloremque nisi beatae corporis voluptatem blanditiis, repellat dolore, ab quas quidem soluta ad sint vitae dicta ex!</p>
+
+          </section>
+
+          <section class="row my-5">
+          </section>
+
+          <section class="row flex-column  col-md-10 mx-auto justify-content-center align-items-center  ">
+            <h2 class="text-center col-md-6 mx-auto">comptétences</h2>
+            <hr class="col-md-3 mx-auto">
+            <p class="col-md-8 text-center"> Elles s'améliorent continuellement car, à mes yeux, la satisfaction de ce travail réside dans l'apprentissage quotidien, surtout lorsque l'on est engagé, curieux et passionné.</p>
+
+            <label for="html" class="col-md-6">html</label>
+            <div class="progress col-md-6" role="progressbar" aria-label="html" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-success" style="width: 25%">
+                25%
+              </div>              
+            </div>
+
+            <label for="css" class="col-md-6 mx-auto">css</label>
+            <div class="progress col-md-6 mx-auto" role="progressbar" aria-label="css" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-info text-dark" style="width: 50%">
+                50%
+              </div>
+            </div>
+            
+            <label for="php" class="col-md-6 mx-auto">php</label>
+            <div class="progress col-md-6 mx-auto" role="progressbar" aria-label="php" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-warning text-dark" style="width: 75%">
+                75%
+              </div>
+            </div>
+            <label for="synfony" class="col-md-6 mx-auto">synfony</label> 
+            <div class="progress col-md-6 mx-auto" role="progressbar" aria-label="synfony" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-danger" style="width: 100%">
+                100%
+              </div>
+            </div>
+
+
+          </section>
+
+          <section id="contact" class="row col-md-8 my-5 mx-auto rounded-2 ">
+            <h2 class="text-center ">Me contacter</h2>
+            <hr>
+            <div class="mb-3 mt-4 col-md-8 mx-auto">
+              <label for="formGroupExampleInput" class="form-label">Nom</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Isaac">
+            </div>
+            <div class="mb-3 col-md-8 mx-auto">
+              <label for="formGroupExampleInput2" class="form-label">Prénom</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Marc">
+            </div>
+          </section>
+
+        </main>
         
-        <p>Developpeur Web - Intégrateur chez <a href="http://">Colombbus</a>
-        </p>
-    </section>
-    <section>
-        <h2>Compétences</h2>
-        <div>
-            <p>
-            Elles s'améliorent continuellement car, à mes yeux, la satisfaction de ce travail réside dans l'apprentissage quotidien, surtout lorsque l'on est engagé, curieux et passionné.
-            </p>
-        </div>
-    </section>
-    <div class="stack">
-        <ul>BACK-END
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>PHP</li>
-            <li>WORDPRESS</li>
-            <li>SYNFONY</li>
-        </ul>
+        
+        <footer>
+            
+          <div class="container">
+            <div class="row">
+              <div class="col-8">
+                <img src="assets/images/one-million-bottom-brand.png" class="img-fluid " alt="image logo footer"></div>
+              <div class="col-4">
+            </div>
+          </div>
 
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
+          
+              
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
 
-    <div class="carousel">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laborum illo natus, ipsam voluptate libero quod magnam mollitia labore autem ullam ducimus provident veritatis quidem quasi officia omnis excepturi iusto.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias non facere eaque excepturi architecto. Quibusdam, porro eligendi ad magni consequuntur error eum nulla minima autem nihil obcaecati, animi aliquam. Dolorum!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit enim ut dicta eveniet itaque, harum maiores, ab eius impedit velit veniam excepturi iure molestiae incidunt ratione magnam earum. Obcaecati, earum.</p>
-    </div>
-    <section class="portefolio">
-        <h2>Portefolio</h2>
-        <p>Ci-dessous, quelques exemples de réalisations effectuées durant la formation, le stage et plus encore:</p>
-        <div>
-           <div><img src="../ASSETS/IMAGES/logo/logo 2 espace.png" alt="site1"></div>
-           <div><img src="../ASSETS/IMAGES/logo/le logeur logo.png" alt="site2"></div>
-           <div><img src="../ASSETS/IMAGES/logo/Capture d'écran 2024-02-24 172536.png" alt="site3" width="25%" ></div>
-        </div>
-    </section>
-
-    
-</body>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
