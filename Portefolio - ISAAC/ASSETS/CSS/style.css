@@ -4,6 +4,10 @@ list-style: none;
 text-decoration: none;
 
 }
+html{
+    font-size: 62.5%;
+}
+
 #entete{
     background-image: url(../images/background/contexte-programmation-personne-travaillant-codes-ordinateur.jpg);
     background-size: cover;
@@ -22,9 +26,9 @@ text-decoration: none;
 #contact{
     box-shadow:black 2px 2px 2px 2px ;
 }
-#carousel p{
+/* #carousel p{
     font-size: larger 2rem !important;
-}
+} */
 
 main section:first-child img{
     height: 300px;
@@ -40,7 +44,12 @@ main section:nth-child(2) {
    
 }
 
-
+@media screen and (min-width:370px) and (max-width:767.9px){
+    html{
+        font-size: .4rem;;
+    }
+    
+}
 
 
 

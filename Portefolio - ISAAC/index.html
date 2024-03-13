@@ -25,9 +25,9 @@
     <body>
       <header>
 
-        <nav class="navbar navbar-expand-sm bg-black " data-bs-theme="dark">
+        <nav class="navbar navbar-expand-xl  bg-black " data-bs-theme="dark">
           <div class="container-fluid">
-            <a class="navbar-brand col-md-4 my-auto " href="index.html"><img src="assets/images/logo/logo 2 espace.png" class="img-fluid col-md-1 " alt=""></a>
+            <a class="navbar-brand col-md-3  my-auto " href="index.html"><img src="assets/images/logo/logo-espace-blanc-text.png" class="img-fluid col-md-4 " alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>                  
@@ -43,16 +43,16 @@
           </div>
           </div>
         </nav>
-        <div id="entete">
-          <div class="row flex-column col-8 col-md-10 mx-auto align-items-center text-center ">
+        <div id="entete" class="row flex-column ">
+          <div class="row flex-column col-8 col-md-10 col-lg-6 mx-auto align-items-center text-center ">
            <div id="present" class="my-5  mx-auto align-items-center text-center ">
               <h1 class="col-10 mx-auto col-md-10 py-3">ISAAC Marc </h1>
 
               <!-- carousel de nom de metier -->
-              <div id="carousel" class="carousel slide">
+              <div id="carousel" class="carousel slide col-11 col-lg-10 mx-auto">
                 <div class="carousel-inner">
-                  <div class="carousel-item active ">
-                    <p>developpeur web <br> <strong>Full stack</strong></p>
+                  <div class="carousel-item active col-8 mx-auto">
+                    <p class="">Développeur web <br> <strong>Full stack</strong></p>
                   </div>
                   <div class="carousel-item ">
                     <p>Technicien <br>helpdesk</p>
@@ -61,7 +61,9 @@
                     <p>Infographiste <br> metteur en page</p>
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+
+                <!--  Les bouttons qui font defiler les "p" -->
+                <button class="carousel-control-prev " type="button" data-bs-target="#carousel" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
@@ -72,10 +74,12 @@
               </div>
            </div>
 
+            <!-- boutton "en savoir plus de couleur bleu"   -->
             <div class="mb-5 px-5">
               <button type="button" class="btn btn-primary ">En savoir plus</button>
             </div>
 
+            <!-- image de "code" en bas de la div -->
             <div class="col-3 col-md-1 py-3">
               <img src="assets/images/code.png" alt="image code"class="img-fluid ">
             </div>
@@ -85,13 +89,35 @@
       </header>
 
         <main>
-          <section class="row my-5 justify-content-around align-items-center ">
+          <section class="row my-5 justify-content-around align-items-center">
+            
             <h2 class="text-center ">Qui suis-je?</h2>
-            <img src="assets/images/isaac/20240219_155041.jpg" class="img-fluid rounded-circle col-md-6" alt="image isaac">
-            <p class="col-md-6 text-center ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos explicabo quos quo expedita doloremque nisi beatae corporis voluptatem blanditiis, repellat dolore, ab quas quidem soluta ad sint vitae dicta ex!</p>
+
+              
+                <div class=" row justify-content-around align-items-center ">
+  
+                  <img src="assets/images/isaac/20240219_155041.jpg" class="img-fluid rounded-circle col-md-12 col-lg-12 mx-auto" alt="image isaac">
+  
+                  <div class="row col-md-10 col-lg-10 mx-auto text-center ">
+                    <h2>Un développeur Web</h2>
+                    <p class="col-md-10 mx-auto text-center ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos explicabo quos quo expedita doloremque nisi beatae corporis voluptatem blanditiis, repellat dolore, ab quas quidem soluta ad sint vitae dicta ex!</p>
+                  </div>
+  
+                  <div class="row col-md-10 col-lg-10 mx-auto text-center ">
+                    <h2>Un HelpDesk</h2>
+                    <p class="col-md-10 mx-auto text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui illo provident quaerat possimus porro odio ipsa laboriosam necessitatibus itaque ad alias adipisci, ipsam quod cupiditate molestiae perspiciatis omnis expedita? Maiores.</p>
+                  </div>
+                  <div class="row col-md-10 col-lg-10 mx-auto text-center ">
+                    <h2>Un infographiste metteur en page</h2>
+                    <p class="col-md-10 mx-auto text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam doloremque laudantium dolorem quam fugit id impedit! Id doloremque assumenda asperiores cupiditate nisi magnam debitis similique officia atque sequi! Magni, saepe.</p>
+                  </div>
+  
+                </div>
+              
+
+            </section>
 
           </section>
-
           <section class="row my-5">
           </section>
 
@@ -99,48 +125,70 @@
             <h2 class="text-center col-md-6 mx-auto">comptétences</h2>
             <hr class="col-md-3 mx-auto">
             <p class="col-md-8 text-center"> Elles s'améliorent continuellement car, à mes yeux, la satisfaction de ce travail réside dans l'apprentissage quotidien, surtout lorsque l'on est engagé, curieux et passionné.</p>
-
-            <label for="html" class="col-md-6">html</label>
-            <div class="progress col-md-6" role="progressbar" aria-label="html" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-success" style="width: 25%">
-                25%
-              </div>              
+            
+            <label for="html" class="col-md-6 mx-auto text-center ">html</label> 
+       
+            <div class="row align-items-center mx-auto justify-content-center   ">
+              <i class="col-md-1"><img src="assets/icon/html icone.png" class="img-fluid" alt="html"></i>
+              <div class="progress col-10 col-md-6  justify-content-start" role="progressbar" aria-label="html" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 25%">
+                  25%
+                </div>              
+              </div>
             </div>
 
-            <label for="css" class="col-md-6 mx-auto">css</label>
-            <div class="progress col-md-6 mx-auto" role="progressbar" aria-label="css" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-info text-dark" style="width: 50%">
-                50%
+            <hr class=" col-3 col-md-3 mx-auto mt-2">
+
+            <label for="css" class="col-md-6 mx-auto text-center ">css</label>
+
+            <div class="row align-items-center mx-auto justify-content-center">
+              <i class="col-md-1"><img src="assets/icon/css icon.png" class="img-fluid" alt="css"></i>
+              <div class="progress col-10 col-md-6 justify-content-start " role="progressbar" aria-label="css" aria-valuenow="50" aria-valuemin="0"          aria-valuemax="100">
+                <div class="progress-bar bg-info text-dark" style="width: 50%">
+                  50%
+                </div>
               </div>
             </div>
             
-            <label for="php" class="col-md-6 mx-auto">php</label>
-            <div class="progress col-md-6 mx-auto" role="progressbar" aria-label="php" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-warning text-dark" style="width: 75%">
-                75%
+            <label for="php" class="col-md-6 mx-auto text-center ">php</label>
+
+            <div class="row align-items-center mx-auto justify-content-center">
+              <i class="col-md-1"><img src="assets/icon/php_icon.png" class="img-fluid" alt=""></i>
+              <div class="progress col-10 col-md-6 justify-content-start " role="progressbar" aria-label="php" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-warning text-dark" style="width: 75%">
+                  75%
+                </div>
               </div>
             </div>
-            <label for="synfony" class="col-md-6 mx-auto">synfony</label> 
-            <div class="progress col-md-6 mx-auto" role="progressbar" aria-label="synfony" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-danger" style="width: 100%">
-                100%
+
+            <label for="synfony" class="col-md-6 mx-auto text-center ">JavaScript</label>
+
+            <div class="row align-items-center mx-auto justify-content-center">
+              <i class="col-md-1"><img src="assets/icon/js2_icon.png" class="img-fluid" alt=""></i>
+              <div class="progress col-10 col-md-6 justify-content-start " role="progressbar" aria-label="synfony" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-danger" style="width: 100%">
+                  100%
+                </div>
               </div>
             </div>
 
 
           </section>
 
-          <section id="contact" class="row col-md-8 my-5 mx-auto rounded-2 ">
+          <section id="contact" class="row  col-10 col-md-8 my-5 mx-auto rounded-2 ">
             <h2 class="text-center ">Me contacter</h2>
             <hr>
-            <div class="mb-3 mt-4 col-md-8 mx-auto">
-              <label for="formGroupExampleInput" class="form-label">Nom</label>
-              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Isaac">
-            </div>
-            <div class="mb-3 col-md-8 mx-auto">
-              <label for="formGroupExampleInput2" class="form-label">Prénom</label>
-              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Marc">
-            </div>
+
+            <form class="col-10">
+              <div class="mb-3 mt-4 col-md-8 mx-auto">
+                <label for="formGroupExampleInput" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Isaac">
+              </div>
+              <div class="mb-3 col-md-8 mx-auto">
+                <label for="formGroupExampleInput2" class="form-label">Prénom</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Marc">
+              </div>
+            </form>
           </section>
 
         </main>
