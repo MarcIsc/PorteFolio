@@ -26,24 +26,54 @@ html{
 #contact{
     box-shadow:black 2px 2px 2px 2px ;
 }
-/* #carousel p{
-    font-size: larger 2rem !important;
-} */
-
+/* parametre photo */
 main section:first-child img{
+    box-shadow: black 2px 2px 2px 2px;
     height: 300px;
     width: auto;
 }
+/* paramètre des polices d'écriture */
+label{
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-size: 2rem;
+    font-style: normal;  
+}
+#contact label{
+    font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+h1{
+    font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-size: 3rem;
+  font-style: normal;
+}
+h2{
+    font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 2rem;
+  font-style: normal;
+}
+p{
+    font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  font-style: normal;
+}
+/* paramètre seconde section vide, juste background */
 main section:nth-child(2) {
     background-image: url(../images/background/wallpaperflare.com_wallpaper.jpg);
     background-position: top;
     background-size: cover;
     background-attachment: fixed;
     height: 300px;
-    
-   
 }
-
+footer{
+    background-color: black;
+}
+/* ajustement spécifique taille d'ecran xs */
 @media screen and (min-width:370px) and (max-width:767.9px){
     html{
         font-size: .4rem;;
