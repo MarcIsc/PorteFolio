@@ -1,86 +1,118 @@
 *{
-box-sizing: border-box;
-list-style: none;
-text-decoration: none;
-
-}
-html{
-    font-size: 62.5%;
-}
-
-#entete{
-    background-image: url(../images/background/contexte-programmation-personne-travaillant-codes-ordinateur.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: top;
-    color: var(--white);
-}
-#present{ 
-    background: rgba(0, 0, 0, 0.5);
-    box-shadow: 2px 2px 2px 2px ;
-    border-radius: 12%;
-    padding: 2rem;
-    font-size: 4rem;
-    color: #DBF2FA;
-}
-#contact{
-    box-shadow:black 2px 2px 2px 2px ;
-}
-/* parametre photo */
-main section:first-child img{
-    box-shadow: black 2px 2px 2px 2px;
-    height: 300px;
-    width: auto;
-}
-/* paramètre des polices d'écriture */
-label{
-    font-family: "Merriweather", serif;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  
+  }
+  html{
+      font-size: 62.5%;
+  }
+  
+  #entete{
+      background-image: url(../images/background/contexte-programmation-personne-travaillant-codes-ordinateur.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: top;
+      color: var(--white);
+  }
+  #present{ 
+      background: rgba(0, 0, 0, 0.5);
+      /* box-shadow: 2px 2px 2px 2px ; */
+      border-radius: 12%;
+      padding: 2rem;
+      font-size: 4rem;
+      color: #DBF2FA;
+  }
+  #contact{
+      box-shadow:black 2px 2px 2px 2px ;
+  }
+  /* parametre photo */
+  main section:first-child img:not(.icone){
+      box-shadow: white 2px 2px 2px 2px; 
+      height: 300px;
+      width: auto;
+  }
+  #icone{
+    height: 50px !important;
+    width: 50px;
+  }
+  /* paramètre des polices d'écriture */
+  label{
+      font-family: "Merriweather", serif;
+      font-weight: 900;
+      font-size: 2rem;
+      font-style: normal;  
+  }
+  #contact label{
+      font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  section:first-child{
+    background-color:#162F49;
+  }
+  h1{
+      font-family: "Merriweather", serif;
     font-weight: 900;
+    font-size: 3rem;
+    font-style: normal;
+  }
+  h2{
+      font-family: "Merriweather", serif;
+    font-weight: 700;
     font-size: 2rem;
-    font-style: normal;  
+    font-style: normal;
+  }
+  p{
+      font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-size: 2rem;
+    font-style: normal;
+  }
+  
+  
+  /* paramètre seconde section vide, juste background */
+  main section:nth-child(2) {
+      background-image: url(../images/background/wallpaperflare.com_wallpaper.jpg);
+      background-position: top;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 300px;
+  }
+  footer{
+      background-color: black;
+  }
+  
+  .progress-container {
+    width: 50%;
+    height: 30px;
+    background-color: #f3f3f3;
 }
-#contact label{
-    font-family: "Merriweather", serif;
-  font-weight: 300;
-  font-style: italic;
-}
-h1{
-    font-family: "Merriweather", serif;
-  font-weight: 900;
-  font-size: 3rem;
-  font-style: normal;
-}
-h2{
-    font-family: "Merriweather", serif;
-  font-weight: 700;
-  font-size: 2rem;
-  font-style: normal;
-}
-p{
-    font-family: "Merriweather", serif;
-  font-weight: 400;
-  font-size: 2rem;
-  font-style: normal;
-}
-/* paramètre seconde section vide, juste background */
-main section:nth-child(2) {
-    background-image: url(../images/background/wallpaperflare.com_wallpaper.jpg);
-    background-position: top;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 300px;
-}
-footer{
-    background-color: black;
-}
-/* ajustement spécifique taille d'ecran xs */
-@media screen and (min-width:370px) and (max-width:767.9px){
-    html{
-        font-size: .4rem;;
-    }
-    
+.black{
+  background-color: black;
 }
 
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #4caf50;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    transition: width 1s ease-in-out;
+}
+p, h2{
+  color: white;
+}
 
+.red{
+  background-color: blue;
+}
 
-
+  /* ajustement spécifique taille d'ecran xs */
+  @media screen and (min-width:370px) and (max-width:767.9px){
+      html{
+          font-size: .4rem;;
+      }
+      
+  }
